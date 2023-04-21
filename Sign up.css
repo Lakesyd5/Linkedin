@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: whitesmoke;
+}
+img {
+    margin-top: 20px;
+    height: 30px;
+    margin-left: 110px;
+}
+p {
+    font-size: xx-large;
+    font-weight: lighter;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.sign-up-form {
+    background-color: white;
+    border-radius: 7px;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+.sectn {
+    margin-top: 30px;
+}
+label {
+    font-size: small;
+    color: rgb(48, 42, 42);
+    font-family: serif;
+    font-weight: lighter;
+}
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+.sign-up-form p {
+    margin: auto;
+    font-size: x-small;
+    width: 250px;
+}
+.agree {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* text-decoration: none; */
+    background-color: rgb(10,102,194);
+    color: white;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+.agree:hover {
+    background-color: rgb(13, 66, 119);
+} 
+.agree a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.continue span img{
+    height: 20px;
+    width: 20px;
+    margin-top: 0;
+    margin-left: 60px;
+    border-radius: 50%;
+}
+.continue {
+    width: 300px;
+    margin-top: 20px;
+    align-items: center;
+    padding: 8px 0;
+    border: 1px solid rgb(223, 220, 220);
+    border-radius: 20px;
+}
+.continue:hover {
+    border: 1px solid rgb(177, 234, 219);
+}
+.continue span {
+    display: flex;
+}
+.continue p {
+    margin-right: 80px;
+    font-size: 13px;
+    font-weight: 550;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sign-up span {
+    display: flex;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+.sign-up span p {
+    font-size: medium;
+}
+.sign-up span a {
+    text-decoration: none;
+    font-size: medium;
+    color: rgb(10,126,212);
+    margin-left: 5px;
+}
+.sign-up span a:hover {
+    text-decoration: underline;
+}
+.sign-up-two p {
+    font-size: smaller;
+}
+.sign-up-two a {
+    font-weight: 550;
+    text-decoration: none;
+    color: rgb(10,126,212);
+    margin-left: 5px;
+}
+.sign-up-two a:hover {
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.footer {
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+.footer img {
+    height: 12px;
+    width: 55px;
+}
+.footer a {
+    font-size: x-small;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: gray;
+}
+.footer a:hover {
+    color: rgb(10,126,212);
+    text-decoration: underline;
+}

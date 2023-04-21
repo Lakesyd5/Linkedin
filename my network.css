@@ -1,0 +1,668 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(243,242,239);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-nav {
+    position: fixed;
+    display: flex;
+    top: 0;
+    z-index: 1;
+}
+nav img {
+    width: 33px; 
+    height: 33px;   
+    margin-right: 7px;
+    margin-left: 120px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: fit-content;
+    border-bottom: 0.2px solid rgb(224,223,220);
+}
+
+.input-nav {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+   background-color: rgb(238,243,248);
+   color: rgb(95,97,99);
+   border-radius: 5px;
+   padding: 3px;
+   padding-left: 20px;
+   margin-right: 120px;
+   border: 2px solid rgb(238,243,248);
+}
+.input-nav:focus-within{
+    border: 2px solid black;
+}
+
+.input-nav input {
+    outline: none;
+    border: none;
+    width: 230px;
+    height: 25px;
+    margin-left: 6px;
+    background-color: rgb(238,243,248);
+    font-size: 14px;
+    font-weight: 300;
+    transition: all linear 0.17s;
+}
+.input-nav:focus-within input {
+    width: 340px;
+}
+
+.input-nav i {
+    background-color: rgb(238,243,248);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 50px; 
+    left: 160px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 435px;
+    border: 0.5px solid rgb(224,223,220);
+}
+.input-nav:focus-within .drop-down {
+    display: block;
+}
+
+.drop-down .drop-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+}
+
+.drop-head-two {
+    font-weight: 500;
+    padding: 2px 7px;
+    border-radius: 4px;
+}
+
+.drop-head-two:hover {
+    background-color: whitesmoke;
+    padding: 2px 7px;
+    border-radius: 4px;
+}
+
+.drop-three {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.drop-three p {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.drop-three i {
+    font-weight: lighter;
+    background-color: white;
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+.drop-three .ins {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    margin-left: 5px;
+    color: rgb(77, 74, 74);
+}
+
+.drop-three:hover {
+    background-color: rgb(243,242,239);
+    width: 100%;
+    padding: 10px 0;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.drop-four {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.drop-four p {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 0;
+}
+
+.drop-four i {
+    font-weight: bolder;
+    background-color: white;
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+.drop-four:hover {
+    background-color: rgb(243,242,239);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.inner{
+    display: flex;
+    align-items: center;
+    min-width: fit-content;
+}
+
+nav a {
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(102,102,102);
+    margin-right: 29px;
+}
+
+nav a i {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+nav a p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+nav a:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.nin {
+    display:block;
+    margin-right: 90px;
+}
+
+.nin:focus-within .dropdn {
+    display: block;
+}
+
+.nin button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    background-color: white;
+    color: rgb(102,102,102);
+}
+
+.nin button:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.nin img {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 0;
+   margin-left: 0px;
+    display: flex;
+}
+
+.nin span i {
+    display: flex;
+    justify-content: center;
+    color: rgb(157,179,200);
+    background-color: rgb(231,226,220);
+    padding: 7px 0 0 0;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.dropdn {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    right: 80px;
+    top: 72px;
+    border-radius: 7px 0 7px 7px;
+    box-shadow: -2px 3px 5px  gray;
+}
+
+.dropdn .drp-one {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.drp-one img {
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.drp-one span {
+    width: 150px;
+}
+
+.drp-one .f-one {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.dropdn .drp-two {
+    margin-left: 10px;
+    margin-top: 12px;
+    border: 1px solid blue;
+    width: fit-content;
+    padding: 3px 78px;
+    color: blue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.dropdn .drp-two:hover {
+    border: 2px solid blue;
+}
+
+.dropdn hr {
+    margin-top: 10px;
+    width: 99%;
+}
+
+.dropdn .bds {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.dropdn .prm {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(102,102,102);
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.dropdn .prm:hover {
+    color: rgb(12,103,194);
+}
+.dropdn .wrd {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: rgb(102,102,102);
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.dropdn .wrd:hover {
+    text-decoration: underline;
+}
+
+.nav-two {
+    background-color: white;
+    min-width: 28%;
+    height: fit-content;
+    padding: 8px 0 11px 0;
+    border-bottom: 0.2px solid rgb(224,223,220);
+    border-left: 0.2px solid rgb(224,223,220);
+}
+.work {
+    margin-left: 10px;
+    display: block;
+    color: rgb(102,102,102);
+}
+.one i {
+    display: block;
+    font-size: 22px;
+    margin-bottom: -6px;
+    padding: 0;
+    margin-left: 8px;
+} 
+.worz {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    padding: 0;
+}
+
+
+
+/* MAIN-PAGE */
+
+.main-page {
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 115px;
+}
+.section-one-one {
+    background-color: white;
+    padding: 10px;
+    width: 315px;
+    border-radius: 7px 7px 0 0;
+    border: 0.5px solid rgb(224,223,220);
+}
+
+.section-one-one span {
+    color: rgb(25,25,25);
+}
+
+.section-one-one .cnn {
+    display: block;
+    padding: 9px 0;
+    color: rgb(130,130,130);
+}
+.section-one-one .cnn:hover {
+    background-color: whitesmoke;
+    /* margin-left: -19px; */
+} 
+
+.section-one-one .cnn i {
+    font-size: 22px;
+    margin-right: 10px;
+    color: rgb(102,102,102);
+}
+
+.section-one-two {
+    background-color: white;
+    padding: 20px;
+    width: 315px;
+    border-left: 0.5px solid rgb(224,223,220);
+    border-right: 0.5px solid rgb(224,223,220);
+    border-bottom: 0.5px solid rgb(224,223,220);
+}
+
+.section-one-two .rra{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 12px;
+}
+
+.section-one-two .rra i {
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+.section-one-two .ade {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(102,102,102);
+}
+
+.din {
+   display: flex;
+   justify-content: center;
+   /* margin: auto;  */
+}
+.din i {
+    font-size: 90px;
+    color: rgb(198, 166, 83);
+}
+
+.whos {
+    font-size: 15px;
+    text-align: center;
+}
+
+.free {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 1px solid blue;
+    width: fit-content;
+    padding:  4px 13px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: blue;
+    margin-top: 5px;
+}
+
+.section-one-three {
+    background-color: white;
+    /* padding: 20px; */
+    width: 315px;
+    border-left: 0.5px solid rgb(224,223,220);
+    border-right: 0.5px solid rgb(224,223,220);
+    border-bottom: 0.5px solid rgb(224,223,220); 
+}
+
+.grow {
+    width: fit-content;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(29,114,199);
+    padding: 5px 0;
+}
+.grow:hover {
+    text-decoration: underline;
+}
+
+.section-two {
+    margin-left: 24px;
+}
+
+.section-two-one {
+    background-color: white;
+    padding: 9px;
+    width: 750px;
+    border-radius: 7px;
+    border: 0.5px solid rgb(224,223,220);
+}
+
+.section-two-one .pnding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-two-one .pnding .manage {
+   font-weight: 500;
+   color: rgb(102,102,102); 
+   padding: 4px 8px;
+   border-radius: 5px;
+}
+.section-two-one .pnding .manage:hover {
+    background-color: rgb(210, 204, 204);
+}
+
+.section-two-two {
+    background-color: white;
+    padding: 9px;
+    width: 750px;
+    border-radius: 7px;
+    border: 0.5px solid rgb(224,223,220);
+    margin-top: 14px; 
+}
+
+.section-two-two .cancel {
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+}
+
+.address-book {
+    margin-left: 25px;
+    padding-right: 25px;
+}
+
+.personal-contact {
+    display: flex;
+    align-items: center;
+}
+.personal-contact i {
+    font-size: 50px;
+    margin-right: 19px;
+    color: rgb(189,215,176);
+}
+
+.periodically {
+    font-size: 11px;
+    margin-top: 5px;
+    color: rgb(102,102,102);
+}
+
+.learn-more {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(120,170,221);
+    margin-top: -4px;
+    width: fit-content;
+}
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.address-book input {
+    margin-top: 15px;
+    width: 98%;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.continue {
+    width: fit-content;
+    border: 1px solid blue;
+    margin-top: 10px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 18px;
+    color: blue;
+}
+.continue:hover {
+    border: 2px solid blue;
+    background-color: rgb(238,243,248);
+}
+
+.more-options {
+    color: rgb(102,102,102);
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.more-options:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.section-two-three {
+    background-color: white;
+    padding: 9px;
+    width: 750px;
+    border-radius: 7px;
+    border: 0.5px solid rgb(224,223,220);
+    margin-top: 10px;
+}
+
+.section-two-three .see-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-two-three .see-all .sall {
+   font-weight: 500;
+   color: rgb(102,102,102); 
+   padding: 4px 8px;
+   border-radius: 5px;
+}
+.section-two-three .see-all .sall:hover {
+    background-color: rgb(210, 204, 204);
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contain-follow {
+    width: 230px;
+    border: 0.5px solid rgb(224,223,220);
+    border-radius: 11px;
+    margin: 6px;
+}
+
+.herd {
+    background-color: rgb(220, 212, 212);
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+}
+.content img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-top: -52px;
+    margin-left: 10px;
+}
+
+.content .name {
+    font-weight: 500;
+}
+
+.inn-et {
+    display: block;
+    padding: 10px;
+}
+
+.inn-et .postn {
+    font-size: 13px;
+    color: rgb(102,102,102);
+}
+
+.followers {
+    font-size: 12px;
+    margin-top: 30px;
+    color: rgb(102,102,102);
+}
+
+.inn-et button {
+    color: blue;
+    border: 1px solid blue;
+    padding: 2px 10px;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 5px;
+    font-weight: 500;
+    background-color: white;
+    box-sizing: border-box;
+}
+.inn-et button:hover {
+    background-color: rgb(238,243,248);
+    /* border: 2px solid blue; */
+}
